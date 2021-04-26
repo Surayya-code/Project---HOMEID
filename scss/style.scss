@@ -1,0 +1,97 @@
+@import "variables";
+@import "common";
+@import "mixins";
+
+// header
+header {
+  max-height: 100px;
+  padding: 25px 0;
+  background-color: black;
+  .header-inner {
+    .logo {
+      img {
+        max-width: 180px;
+        height: auto;
+      }
+    }
+  }
+  .nav-bar {
+    text-align: center;
+    ul {
+      display: inline-flex;
+      list-style-type: none;
+      .nav-item {
+        position: relative;
+        margin: 15px;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+      .active a::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        top: 30px;
+        left: 0;
+        right: 0;
+        background-color: #d1a570;
+      }
+    }
+  }
+  .header-end {
+    text-align: end;
+    align-items: flex-end;
+    padding-left: 15px;
+    .customize {
+      display: inline-flex;
+
+      .login {
+        margin: 15px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        .circle {
+          margin-right: 35px;
+        }
+        .listing {
+          border: 1px solid white;
+          padding: 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+#demo-1 {
+  position: absolute;
+  #owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    position: relative;
+    max-width: 470px;
+    border-radius: 7px;
+    padding: 30px;
+    z-index: 19;
+    bottom: 700px;
+    left: 800px;
+    .elementSpan {
+      display: flex;
+      justify-content: space-around;
+      span {
+        margin: 0 15px;
+      }
+    }
+    .property-bottoms {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

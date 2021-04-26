@@ -1,0 +1,121 @@
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  max-height: 100px;
+  padding: 25px 0;
+  background-color: black;
+}
+
+header .header-inner .logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+header .nav-bar {
+  text-align: center;
+}
+
+header .nav-bar ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+}
+
+header .nav-bar ul .nav-item {
+  position: relative;
+  margin: 15px;
+}
+
+header .nav-bar ul .nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header .nav-bar ul .active a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: 30px;
+  left: 0;
+  right: 0;
+  background-color: #d1a570;
+}
+
+header .header-end {
+  text-align: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 15px;
+}
+
+header .header-end .customize {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header .header-end .customize .login {
+  margin: 15px;
+}
+
+header .header-end .customize .login a {
+  text-decoration: none;
+  color: white;
+}
+
+header .header-end .customize .login .circle {
+  margin-right: 35px;
+}
+
+header .header-end .customize .login .listing {
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#demo-1 {
+  position: absolute;
+}
+
+#demo-1 #owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#demo-1 .card {
+  position: relative;
+  max-width: 470px;
+  border-radius: 7px;
+  padding: 30px;
+  z-index: 19;
+  bottom: 700px;
+  left: 800px;
+}
+
+#demo-1 .card .elementSpan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#demo-1 .card .elementSpan span {
+  margin: 0 15px;
+}
+
+#demo-1 .card .property-bottoms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
