@@ -1,0 +1,81 @@
+#section-slider {
+  position: relative;
+  .item {
+    background-image: url(/images/demo1.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 91vh;
+    .card {
+      position: relative;
+      max-width: 470px;
+      border-radius: 7px;
+      padding: 30px;
+      left: 850px;
+      top: 60px;
+
+      .elementSpan {
+        display: flex;
+        justify-content: space-around;
+        span {
+          margin: 0 15px;
+        }
+      }
+      .property-bottoms {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .item-2 {
+    background-image: url(/images/demo2.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 91vh;
+    .card {
+      position: relative;
+      max-width: 470px;
+      border-radius: 7px;
+      padding: 30px;
+      left: 850px;
+      top: 60px;
+
+      .elementSpan {
+        display: flex;
+        justify-content: space-around;
+        span {
+          margin: 0 15px;
+        }
+      }
+      .property-bottoms {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .item-3 {
+    background-image: url(/images/demo3.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 91vh;
+    .card {
+      position: relative;
+      max-width: 470px;
+      border-radius: 7px;
+      padding: 30px;
+      left: 850px;
+      top: 60px;
+
+      .elementSpan {
+        display: flex;
+        justify-content: space-around;
+        span {
+          margin: 0 15px;
+        }
+      }
+      .property-bottoms {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

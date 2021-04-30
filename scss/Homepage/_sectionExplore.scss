@@ -1,0 +1,68 @@
+#explore {
+  background-color: black;
+
+  .heading_explore {
+    @include heading-title();
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .imagWrapper {
+    max-width: 207px;
+    max-height: 350px;
+    text-align: center;
+    justify-content: center;
+
+    .image-box {
+      padding: 30px;
+      text-align: center;
+      height: 153px;
+
+      .img-box1 {
+        z-index: 1;
+        position: relative;
+        width: 153px;
+      }
+
+      .img-box2 {
+        width: 153px;
+        opacity: 0;
+        z-index: 2;
+        position: relative;
+        bottom: 105px;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 100%;
+        }
+      }
+
+      .img-context-box {
+        text-align: center;
+
+        .title {
+          line-height: 2;
+          font-size: 16px;
+          margin: 0;
+          text-align: center;
+
+          a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+          }
+        }
+
+        .description {
+          margin-top: 0;
+
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
