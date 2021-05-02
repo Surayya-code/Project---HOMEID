@@ -9,7 +9,7 @@ $(document).ready(function () {
         dots: true,
       },
       600: {
-        items: 3,
+        items: 1,
       },
       1000: {
         items: 1,
@@ -19,7 +19,7 @@ $(document).ready(function () {
   
   $(".carousel-item").owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 20,
     nav: false,
     dots: false,
     responsive: {
@@ -27,10 +27,23 @@ $(document).ready(function () {
         items: 1,
       },
       600: {
-        items: 3,
+        items: 1,
       },
       1000: {
+        items: 2,
+      },
+      1200: {
         items: 4,
+      },
+      1400: {
+        items: 4,
+      },
+      1800: {
+        items: 4,
+      },
+      1900: {
+        items: 4,
+        
       },
     },
   });

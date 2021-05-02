@@ -1,5 +1,6 @@
 #section-slider {
   position: relative;
+  // card-1
   .item {
     background-image: url(/images/demo1.jpg);
     background-position: center center;
@@ -10,22 +11,28 @@
       max-width: 470px;
       border-radius: 7px;
       padding: 30px;
-      left: 850px;
-      top: 60px;
-
+      left: 950px;
+      top: 200px;
+      @include IPadTablet() {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        left: 200px;
+      }
       .elementSpan {
         display: flex;
-        justify-content: space-around;
-        span {
-          margin: 0 15px;
-        }
-      }
-      .property-bottoms {
-        display: flex;
         justify-content: space-between;
+        i {
+          margin: 0 10px;
+          color: $btn_gold;
+        }
+        
       }
+      @include prop-card-bottoms();
     }
   }
+  // card-2
   .item-2 {
     background-image: url(/images/demo2.jpg);
     background-position: center center;
@@ -36,46 +43,58 @@
       max-width: 470px;
       border-radius: 7px;
       padding: 30px;
-      left: 850px;
-      top: 60px;
-
+      left: 950px;
+      top: 200px;
+      @include IPadTablet() {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        left: 200px;
+      }
+     
       .elementSpan {
         display: flex;
-        justify-content: space-around;
-        span {
+        justify-content: space-between;
+        i {
           margin: 0 15px;
+          color: $btn_gold;
         }
       }
-      .property-bottoms {
-        display: flex;
-        justify-content: space-between;
-      }
+      @include prop-card-bottoms();
     }
   }
+    // card-3
   .item-3 {
-    background-image: url(/images/demo3.jpg);
-    background-position: center center;
-    background-size: cover;
-    min-height: 91vh;
-    .card {
-      position: relative;
-      max-width: 470px;
-      border-radius: 7px;
-      padding: 30px;
-      left: 850px;
-      top: 60px;
-
-      .elementSpan {
-        display: flex;
-        justify-content: space-around;
-        span {
-          margin: 0 15px;
+      background-image: url(/images/demo3.jpg);
+      background-position: center center;
+      background-size: cover;
+      min-height: 91vh;
+      .card {
+        position: relative;
+        max-width: 470px;
+        border-radius: 7px;
+        padding: 30px;
+        left: 950px;
+        top: 200px;
+        @include IPadTablet() {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          width: 400px;
+          left: 200px;
         }
-      }
-      .property-bottoms {
-        display: flex;
-        justify-content: space-between;
+        .elementSpan {
+          display: flex;
+          justify-content: space-between;
+          i {
+            margin: 0 15px;
+            color: $btn_gold;
+          }
+        }
+        @include prop-card-bottoms();
       }
     }
-  }
+
+  
 }

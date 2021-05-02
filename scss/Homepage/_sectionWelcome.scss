@@ -10,11 +10,15 @@
   }
   .container {
     .card {
+      @include IPadTablet {
+        margin: 10px;
+      }
       text-align: center;
       justify-content: center;
       padding: 30px;
       border-radius: 5px;
       background-color: #fff;
+
       &:hover {
         box-shadow: 0px 5px 15px 0px rgb(216, 215, 215);
         transition: 0.3s;
@@ -32,7 +36,7 @@
     }
   }
   .heading-feature {
-    p {
+    .heading-feature p {
       color: $btn_offer-cl;
     }
   }
@@ -46,6 +50,18 @@
       width: 221px;
       height: 53px;
       color: white;
+      @include IPadTablet {
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        padding-top: 13px;
+        margin: 10px;
+      }
+    }
+    @include IPadTablet {
+      display: flex;
+      justify-content: center;
     }
   }
   // first -slide owl carousel
@@ -59,26 +75,23 @@
       .property_bedge {
         top: 8px;
         position: absolute;
-        justify-content: flex-start;
+        justify-content: space-between;
         .featured {
           background-color: $btn_oring;
           @include card_btns();
         }
         .sale {
           background-color: $primary-cl;
-          border-radius: 8px;
-          padding: 3px;
-          margin: 5px;
+          @include card_btns();
         }
-        .hot {
-          background-color: $btn_offer-cl;
-          border-radius: 8px;
-          padding: 3px;
-        }
+        // .hot {
+        //   background-color: $btn_offer-cl;
+        //   @include card_btns();
+        // }
       }
       &:hover {
-        box-shadow: 0px 5px 15px 0px rgb(216, 215, 215);
-        transition: 0.3s;
+        box-shadow: 0px 5px 15px 0px rgb(161, 161, 161);
+        transition: 0.5s;
       }
       .card-body {
         h3 {
@@ -92,17 +105,59 @@
           text-decoration: none;
         }
         .box_room_icons {
+          margin-top: 5px;
           .icons_box {
-            margin: 10px 0;
-            padding-right: 15px;
-            img {
-              width: 18px;
-              border-radius: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            i {
+              margin: 0 10px;
+              color: $btn_gold;
             }
-            span {
-              font-size: 13px;
-              color: #d1a570;
+            // span {
+            //   font-size: 12px;
+            // }
+          }
+          @include prop-card-bottoms();
+          @include IPhoneX {
+            // margin-top: 5px ;
+            .icons_box {
+              display: flex;
+              justify-content: space-between;
+              // margin-top: 5px ;
+              i {
+                margin: 3px;
+                color: $btn_gold;
+              }
+              // span {
+              //   font-size: 12px;
+              // }
             }
+            @include prop-card-bottoms();
+          }
+        }
+      }
+      .last_icons {
+        margin: 10px;
+        i {
+          color: $btn_offer-cl;
+          border: 1px solid $btn_offer-cl;
+          border-radius: 50%;
+          padding: 4px;
+        }
+        .fa-star {
+          margin-left: 85px;
+        }
+        @include IPhoneX {
+          margin: 0px;
+          i {
+            color: $btn_offer-cl;
+            border: 1px solid $btn_offer-cl;
+            border-radius: 50%;
+            padding: 4px;
+          }
+          .fa-star {
+            margin-left: 55px;
           }
         }
       }
