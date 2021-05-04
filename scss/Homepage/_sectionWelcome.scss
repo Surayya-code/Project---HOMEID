@@ -67,11 +67,11 @@
   // first -slide owl carousel
   .carousel-item {
     display: flex;
-    margin: 40px;
+    margin: 20px;
     #card {
       border: 1px solid #eee;
       border-radius: 5px;
-      margin: 0 15px;
+      margin: 0 10px;
       .property_bedge {
         top: 8px;
         position: absolute;
@@ -105,18 +105,19 @@
           text-decoration: none;
         }
         .box_room_icons {
+          display: flex;
           margin-top: 5px;
           .icons_box {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             margin-top: 5px;
             i {
-              margin: 0 10px;
+              margin: 0 5px;
               color: $btn_gold;
             }
-            // span {
-            //   font-size: 12px;
-            // }
+            span {
+              font-size: 12px;
+            }
           }
           @include prop-card-bottoms();
           @include IPhoneX {
@@ -146,7 +147,7 @@
           padding: 4px;
         }
         .fa-star {
-          margin-left: 85px;
+          margin-left: 40px;
         }
         @include IPhoneX {
           margin: 0px;

@@ -1,4 +1,33 @@
 #loveWorking{
     background-image: linear-gradient(77deg,rgba(35,92,71,.2) -36%,rgba(235,191,127,.2) 111%);
     @include heading-title();
+.card{
+    padding: 10px 30px;
+    .authors-info{
+        display: flex;
+        justify-content: center;
+        margin: 10px 40px;
+        padding: 4px 50px;
+        .author-avatar{
+            img{
+                width: 60px;
+            }
+        }
+        .author-txt-right{
+            .name{
+                font-size: 18px;
+            }
+            .job{
+                font-size: 12px;
+            }
+        }
+        .author-about-text{
+            .content{
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+
 }

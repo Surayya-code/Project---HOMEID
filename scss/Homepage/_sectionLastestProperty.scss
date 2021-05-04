@@ -7,15 +7,17 @@
  
     }
     .view_property {
+      margin: 0;
         a {
           align-items: center;
           justify-content: center;
           background-color: $btn_gold;
           border-radius: 1px solid $btn_gold;
-          padding: 5px;
-          width: 250px;
+          padding: 0px;
+          width: 200px;
           height: 40px;
           color: white;
+          
           @include IPadTablet {
             align-items: center;
             justify-content: center;
@@ -31,13 +33,13 @@
         }
     }
       // second-slide owl carousel
-    .carousel-item {
+      .carousel-item {
         display: flex;
-        margin: 40px;
+        margin: 20px;
         #card {
           border: 1px solid #eee;
           border-radius: 5px;
-          margin: 0 15px;
+          margin: 0 10px;
           .property_bedge {
             top: 8px;
             position: absolute;
@@ -71,18 +73,19 @@
               text-decoration: none;
             }
             .box_room_icons {
+              display: flex;
               margin-top: 5px;
               .icons_box {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 margin-top: 5px;
                 i {
-                  margin: 0 10px;
+                  margin: 0 5px;
                   color: $btn_gold;
                 }
-                // span {
-                //   font-size: 12px;
-                // }
+                span {
+                  font-size: 12px;
+                }
               }
               @include prop-card-bottoms();
               @include IPhoneX {
@@ -112,7 +115,7 @@
               padding: 4px;
             }
             .fa-star {
-              margin-left: 85px;
+              margin-left: 30px;
             }
             @include IPhoneX {
               margin: 0px;
@@ -131,7 +134,33 @@
         .owl-theme .owl-dots .owl-dot.active span {
           background: red !important;
         }
-     }
+      }
+.view__property{
+     margin: 0;
+    a {
+      align-items: center;
+      justify-content: center;
+      background-color: $btn_gold;
+      border-radius: 1px solid $btn_gold;
+      padding: 0px;
+      width: 180px;
+      height: 60px;
+      color: white;
+      
+      @include IPadTablet {
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        padding-top: 13px;
+        margin: 10px;
+      }
+    }
+    @include IPadTablet {
+      display: flex;
+      justify-content: center;
+    }
 
-
+  }
 }
+

@@ -1,6 +1,108 @@
 #Articles{
     @include heading-title();
 
+    .carousel-item {
+        display: flex;
+        margin: 20px;
+        #card {
+          border: 1px solid #eee;
+          border-radius: 5px;
+          margin: 0 10px;
+          .property_bedge {
+            top: 8px;
+            position: absolute;
+            justify-content: space-between;
+            .featured {
+              background-color: $btn_oring;
+              @include card_btns();
+            }
+            .sale {
+              background-color: $primary-cl;
+              @include card_btns();
+            }
+            // .hot {
+            //   background-color: $btn_offer-cl;
+            //   @include card_btns();
+            // }
+          }
+          &:hover {
+            box-shadow: 0px 5px 15px 0px rgb(161, 161, 161);
+            transition: 0.5s;
+          }
+          .card-body {
+            h3 {
+              font-size: 16px;
+            }
+            .text2 {
+              font-size: 14px;
+              color: rgb(62, 62, 62);
+            }
+            a {
+              text-decoration: none;
+            }
+            .box_room_icons {
+              display: flex;
+              margin-top: 5px;
+              .icons_box {
+                display: flex;
+                justify-content: center;
+                margin-top: 5px;
+                i {
+                  margin: 0 5px;
+                  color: $btn_gold;
+                }
+                span {
+                  font-size: 12px;
+                }
+              }
+              @include prop-card-bottoms();
+              @include IPhoneX {
+                // margin-top: 5px ;
+                .icons_box {
+                  display: flex;
+                  justify-content: center;
+                  // margin-top: 5px ;
+                  i {
+                    margin: 3px;
+                    color: $btn_gold;
+                  }
+                  span {
+                    font-size: 12px;
+                  }
+                }
+                @include prop-card-bottoms();
+              }
+            }
+          }
+          .last_icons {
+            margin: 10px;
+            i {
+              color: $btn_offer-cl;
+              border: 1px solid $btn_offer-cl;
+              border-radius: 50%;
+              padding: 4px;
+            }
+            .fa-star {
+              margin-left: 30px;
+            }
+            @include IPhoneX {
+              margin: 0px;
+              i {
+                color: $btn_offer-cl;
+                border: 1px solid $btn_offer-cl;
+                border-radius: 50%;
+                padding: 4px;
+              }
+              .fa-star {
+                margin-left: 55px;
+              }
+            }
+          }
+        }
+        .owl-theme .owl-dots .owl-dot.active span {
+          background: red !important;
+        }
+      }
 
 
 }

@@ -11,12 +11,12 @@
       max-width: 470px;
       border-radius: 7px;
       padding: 30px;
-      left: 950px;
+      left: 850px;
       top: 200px;
       @include IPadTablet() {
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         width: 400px;
         left: 200px;
       }
@@ -43,7 +43,7 @@
       max-width: 470px;
       border-radius: 7px;
       padding: 30px;
-      left: 950px;
+      left: 850px;
       top: 200px;
       @include IPadTablet() {
         position: relative;
@@ -75,7 +75,7 @@
         max-width: 470px;
         border-radius: 7px;
         padding: 30px;
-        left: 950px;
+        left: 850px;
         top: 200px;
         @include IPadTablet() {
           position: relative;
